@@ -3,8 +3,7 @@ from time import sleep
 from random import randint
 import win32con
 
-L = [x for x in range(10, 50000, 100)]
-SLEEP_INTERVAL = 10
+SLEEP_INTERVAL = 60
 
 
 def move_mouse(x, y):
@@ -12,7 +11,8 @@ def move_mouse(x, y):
 
     
 if __name__ == '__main__':
+
     while True:
-        move_mouse(randint(0, len(L)-1), randint(0, len(L)-1))
+        move_mouse(randint(100, 1400), randint(100, 700))
     
         sleep(SLEEP_INTERVAL)
